@@ -24,4 +24,10 @@ describe('1 - Teste a função fecthProducts', () => {
     const url = 'https://api.mercadolibre.com/sites/MLB/search?q=computador';
     expect(fetch).toHaveBeenCalledWith(url);
   });
+
+  it('Teste se o retorno da função fetchProducts com o argumento "computador" é uma estrutura de dados igual ao objeto computadorSearch, que já está importado no arquivo', async () => {
+    const compare = await fetchProducts('computador');
+    // compara recursivamente todas as propriedades de instâncias de objetos;
+    expect(compare).toEqual(computadorSearch);
+  });
 });
