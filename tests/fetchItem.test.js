@@ -3,6 +3,23 @@ const { fetchItem } = require('../helpers/fetchItem');
 const item = require('../mocks/item');
 
 describe('2 - Teste a função fecthItem', () => {
-  // implemente seus testes aqui
-  fail('Teste vazio');
+  it('Teste se fetchItem é uma função.', async () => {
+    expect(fetchItem).toBeInstanceOf(Function);
+  });
+  
+  it('', () => {
+    fail('Teste vazio');
+  });
+
+  it('', () => {
+    fail('Teste vazio');
+  });
+
+  it('', () => {
+    fail('Teste vazio');
+  });
+
+  it('', () => {
+    fail('Teste vazio');
+  });
 });
