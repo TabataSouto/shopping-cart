@@ -1,5 +1,6 @@
 require('../mocks/fetchSimulator');
 const { fetchItem } = require('../helpers/fetchItem');
+const fetchSimulator = require('../mocks/fetchSimulator');
 const item = require('../mocks/item');
 
 describe('2 - Teste a função fecthItem', () => {
@@ -18,8 +19,9 @@ describe('2 - Teste a função fecthItem', () => {
     expect(fetch).toHaveBeenCalledWith(url);
   });
 
-  it('', () => {
-    fail('Teste vazio');
+  it('Teste se o retorno da função fetchItem com o argumento do item "MLB1615760527" é uma estrutura de dados igual ao objeto item que já está importado no arquivo.', async () => {
+    const compare = await fetchItem('MLB1615760527');
+    expect(compare).toEqual(item);
   });
 
   it('', () => {
