@@ -7,8 +7,9 @@ describe('2 - Teste a função fecthItem', () => {
     expect(fetchItem).toBeInstanceOf(Function);
   });
   
-  it('', () => {
-    fail('Teste vazio');
+  it('Execute a função fetchItem com o argumento do item "MLB1615760527" e teste se fetch foi chamada.', async () => {
+    await fetchItem('MLB1615760527');
+    expect(fetch).toHaveBeenCalled();
   });
 
   it('', () => {
