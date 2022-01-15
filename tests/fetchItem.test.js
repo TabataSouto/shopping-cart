@@ -24,7 +24,7 @@ describe('2 - Teste a função fecthItem', () => {
     expect(compare).toEqual(item);
   });
 
-  it('', () => {
-    fail('Teste vazio');
+  it('Teste se, ao chamar a função fetchItem sem argumento, retorna um erro com a mensagem: You must provide an url.', async () => {
+    expect(await fetchItem()).toEqual(new Error('You must provide an url'));
   });
 });
