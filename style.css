@@ -164,3 +164,7 @@ body {
 .total-price {
   font-weight: 800;
 }
+
+.loading {
+  align-self: center;
+}
